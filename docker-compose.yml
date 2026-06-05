@@ -31,9 +31,7 @@ services:
       - redis-data:/data
     networks:
       - stack
-    ports:
-      - "${REDIS_PORT:-6379}:6379"
-
+    
   calcom:
     image: calcom.docker.scarf.sh/calcom/cal.diy
     build:
@@ -76,8 +74,6 @@ services:
     restart: always
     networks:
       - stack
-    ports:
-      - "${API_PORT:-80}:${API_PORT:-80}"
     env_file: .env
     environment:
       - NODE_ENV=${NODE_ENV}
