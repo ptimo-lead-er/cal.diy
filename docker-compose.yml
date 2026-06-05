@@ -33,7 +33,7 @@ services:
       - stack
     
   calcom:
-    image: calcom.docker.scarf.sh/calcom/cal.diy
+    # image: calcom.docker.scarf.sh/calcom/cal.diy
     build:
       context: .
       dockerfile: Dockerfile
