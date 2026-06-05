@@ -53,7 +53,6 @@ services:
         CSP_POLICY: ${CSP_POLICY}
         GOOGLE_API_CREDENTIALS: '{"web":{"client_id":"...","client_secret":"...","redirect_uris":[...]}}'
         REDIS_URL: redis://redis:6379
-        NEXT_PUBLIC_API_V2_URL: https://cal.nextsimumedia.de/api/v2
     restart: always
     networks:
       - stack
