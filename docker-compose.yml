@@ -52,6 +52,7 @@ services:
         DATABASE_DIRECT_URL: ${DATABASE_URL}
         CSP_POLICY: ${CSP_POLICY}
         GOOGLE_API_CREDENTIALS: '{"web":{"client_id":"...","client_secret":"...","redirect_uris":[...]}}'
+        REDIS_URL: redis://redis:6379
     restart: always
     networks:
       - stack
