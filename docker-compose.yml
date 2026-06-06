@@ -8,6 +8,8 @@ networks:
   stack:
     name: stack
     external: false
+  dokploy-network:
+    external: true
 
 services:
   database:
@@ -76,6 +78,7 @@ services:
     restart: always
     networks:
       - stack
+      - dokploy-network
     env_file: .env
     environment:
       - NODE_ENV=${NODE_ENV}
